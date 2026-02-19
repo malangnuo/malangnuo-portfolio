@@ -7,6 +7,7 @@ interface Props {
     title: string;
     description: string;
     image: string;
+    date: string;
     tags: Array<{
         name: string;
         class: string;
@@ -16,7 +17,7 @@ interface Props {
     github?: string;
 }
 
-const { image, title, description, tags, link, github } = Astro.props;
+const { image, title, description, date, tags, link, github } = Astro.props;
 ---
 
 <article
@@ -66,6 +67,9 @@ const { image, title, description, tags, link, github } = Astro.props;
 
         <p class="text-lg text-gray-300 mb-8 leading-relaxed font-light">
             {description}
+        </p>
+        <p class="text-lg text-gray-300 mb-8 leading-relaxed font-light">
+            진행 기간: {date}
         </p>
 
         <footer class="flex items-center justify-start gap-x-4">

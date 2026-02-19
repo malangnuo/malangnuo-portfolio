@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@iconify-json/lucide": "^1.2.82",
+    "@iconify-json/simple-icons": "^1.2.71",
     "@types/aos": "^3.0.7",
     "aos": "^2.3.4",
     "astro": "^5.16.6",

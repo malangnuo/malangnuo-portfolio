@@ -1,43 +1,112 @@
 export const TAGS = {
-    ASTRO: {
-        name: "Astro",
-        class: "bg-[#7836cf]/20 text-[#bc95ff]",
-        icon: "lucide:rocket",
+    AWS: {
+        name: "AWS",
+        class: "bg-[#232F3E] text-[#FF9900]",
+        icon: "simple-icons:amazonaws",
     },
-    REACT: {
-        name: "React",
-        class: "bg-[#23272f] text-[#58c4dc]",
-        icon: "lucide:atom",
+    ISTIO: {
+        name: "Istio",
+        class: "bg-[#466BB0] text-white",
+        icon: "simple-icons:istio",
     },
-    TAILWIND: {
-        name: "Tailwind CSS",
-        class: "bg-[#003159] text-white",
-        icon: "lucide:wind",
+    KUBERNETES: {
+        name: "Kubernetes",
+        class: "bg-[#326CE5] text-white",
+        icon: "simple-icons:kubernetes",
     },
-    NODE: {
-        name: "Node.js",
-        class: "bg-[#339933]/20 text-[#6cc24a]",
-        icon: "lucide:server",
+    PYTHON: {
+        name: "Python",
+        class: "bg-[#3776AB] text-[#FFD43B]",
+        icon: "simple-icons:python",
+    },
+    GRAFANA: {
+        name: "Grafana",
+        class: "bg-[#F46800] text-white",
+        icon: "simple-icons:grafana",
+    },
+    UPTIME_KUMA: {
+        name: "Uptime Kuma",
+        class: "bg-[#5CDD8B] text-[#202B38]",
+        icon: "simple-icons:uptimekuma",
+    },
+    GITOPS: {
+        name: "GitOps",
+        class: "bg-[#EF7B4D] text-white",
+        icon: "simple-icons:argo",
+    },
+    OBSERVABILITY: {
+        name: "Observability",
+        class: "bg-[#F46800] text-white",
+        icon: "simple-icons:grafana",
+    },
+    TERRAFORM: {
+        name: "Terraform",
+        class: "bg-[#7B42BC] text-white",
+        icon: "simple-icons:terraform",
+    },
+    NETWORK: {
+        name: "Network",
+        class: "bg-[#0EA5E9] text-white",
+        icon: "lucide:network",
+    },
+    
+    KUBECOST: {
+        name: "Kubecost",
+        class: "bg-[#2E96FF] text-white",
+        icon: "lucide:dollar-sign",
     },
 };
 
 export const PROJECTS = [
     {
-        title: "CryptoViz - Real-time Analytics Dashboard",
+        title: "AWS 시스템 운영",
         description:
-            "A high-performance dashboard for tracking cryptocurrency trends. Features live charts, portfolio management, and automated market alerts.",
+            "AWS 마이그레이션 후 운영하며, 모니터링·비용 최적화·자동화를 통해 안정적이고 효율적인 클라우드 운영 체계를 유지",
+        date: "2025.10.20 ~ 2026.03.20 (5 months)",
         link: "https://cryptoviz-demo.vercel.app/",
         github: "https://github.com/jhondoe/cryptoviz",
         image: "/projects/cryptoviz.webp",
-        tags: [TAGS.REACT, TAGS.TAILWIND, TAGS.NODE],
+        tags: [TAGS.AWS, TAGS.PYTHON, TAGS.GRAFANA, TAGS.UPTIME_KUMA],
     },
     {
-        title: "EcoEarth - Sustainable E-commerce Platform",
+        title: "SaaS 플랫폼 운영",
         description:
-            "A modern eco-friendly marketplace focused on sustainable living. Highly optimized for performance and accessibility, featuring a custom CMS for organic product curation.",
+            "Kubernetes 기반 플랫폼을 운영하며, 모니터링·CI/CD·보안 자동화를 통해 장애 대응 속도와 운영 안정성을 지속적으로 개선",
+        date: "2024.09.01 ~ 2026.03.20 (18 months)",
         link: "https://ecoearth-shop.dev",
         github: "https://github.com/jhondoe/ecoearth",
         image: "/projects/ecoearth.webp",
-        tags: [TAGS.ASTRO, TAGS.TAILWIND, TAGS.REACT],
+        tags: [TAGS.KUBERNETES, TAGS.ISTIO, TAGS.GITOPS, TAGS.OBSERVABILITY],
+    },
+    {
+        title: "AWS 클라우드 마이그레이션",
+        description:
+            "S 기업의 온프레미스 환경을 AWS로 마이그레이션하며, DMS·MGN 기반 전환으로 서비스 중단을 최소화하고 안정적인 Cutover를 완료",
+        date: "2025.06.16 ~ 2025.10.19 (4 months)",
+        link: "https://ecoearth-shop.dev",
+        github: "https://github.com/jhondoe/ecoearth",
+        image: "/projects/ecoearth.webp",
+        tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.NETWORK, TAGS.PYTHON],
+    },
+    {
+        title: "AWS 기반 신규 서비스 구축",
+        description:
+            "S사의 AWS 기반 신규 보안 서비스를 설계·구축하며, 대규모 UDP/TCP 트래픽 환경에서 데이터 유실 0을 달성하고 안정적인 자동 확장 아키텍처를 구현",
+        date: "2024.11.12 ~ 2025.03.12 (4 months)",
+        link: "https://ecoearth-shop.dev",
+        github: "https://github.com/jhondoe/ecoearth",
+        image: "/projects/ecoearth.webp",
+        tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.NETWORK],
+    },
+    {
+        title: "중동 시장 진출을 위한 AWS 기반 인프라 구축",
+        description:
+            "CJ Cloud Wave 부트캠프에서 진행한 프로젝트, 실시간 데이터 수집 파이프라인과 운영에 최적화된 안정적인 인프라 구축을 중심으로 올리브영의 중동 시장 진출 확대를 위한 인프라 구축 프로젝트",
+        date: "2024.02.07 ~ 2024.02.29 (3 weeks)",
+        link: "https://ecoearth-shop.dev",
+        github: "https://github.com/jhondoe/ecoearth",
+        image: "/projects/oliveyoung.jpg",
+        tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.GITOPS, TAGS.KUBECOST],
     },
 ];
+ 

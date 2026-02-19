@@ -11,7 +11,6 @@ export const PERSONAL_INFO = {
             href: "www.linkedin.com/in/by-choi",
             label: "LinkedIn",
         },
-        { href: "choiboyuna@gmail.com", label: "Email" },
-        { href: "https://malangnuo.com/", label: "Blog" },        
+        { href: "choiboyuna@gmail.com", label: "Email" },        
     ],
 };

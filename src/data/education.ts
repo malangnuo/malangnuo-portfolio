@@ -8,7 +8,7 @@ export const EDUCATION = [
     {
         title: "Incheon National University",
         description:
-            "BS, Computer Science",
+            "B.S Computer Science",
         date: "2020.03 ~ 2024.08",
     },
     {

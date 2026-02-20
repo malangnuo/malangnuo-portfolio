@@ -63,6 +63,7 @@ export const PROJECTS = [
         description:
             "AWS 마이그레이션 후 운영하며, 모니터링·비용 최적화·자동화를 통해 안정적이고 효율적인 클라우드 운영 체계를 유지",
         date: "2025.10.20 ~ 2026.03.20 (5 months)",
+        job: "Platform Engineer",
         link: "https://cryptoviz-demo.vercel.app/",
         github: "https://github.com/jhondoe/cryptoviz",
         image: "/projects/cryptoviz.webp",
@@ -73,6 +74,7 @@ export const PROJECTS = [
         description:
             "Kubernetes 기반 플랫폼을 운영하며, 모니터링·CI/CD·보안 자동화를 통해 장애 대응 속도와 운영 안정성을 지속적으로 개선",
         date: "2024.09.01 ~ 2026.03.20 (18 months)",
+        job: "Platform Engineer",
         link: "https://ecoearth-shop.dev",
         github: "https://github.com/jhondoe/ecoearth",
         image: "/projects/ecoearth.webp",
@@ -83,6 +85,7 @@ export const PROJECTS = [
         description:
             "S 기업의 온프레미스 환경을 AWS로 마이그레이션하며, DMS·MGN 기반 전환으로 서비스 중단을 최소화하고 안정적인 Cutover를 완료",
         date: "2025.06.16 ~ 2025.10.19 (4 months)",
+        job: "Solutions Architect",
         link: "https://ecoearth-shop.dev",
         github: "https://github.com/jhondoe/ecoearth",
         image: "/projects/ecoearth.webp",
@@ -93,6 +96,7 @@ export const PROJECTS = [
         description:
             "S사의 AWS 기반 신규 보안 서비스를 설계·구축하며, 대규모 UDP/TCP 트래픽 환경에서 데이터 유실 0을 달성하고 안정적인 자동 확장 아키텍처를 구현",
         date: "2024.11.12 ~ 2025.03.12 (4 months)",
+        job: "Solutions Architect",
         link: "https://ecoearth-shop.dev",
         github: "https://github.com/jhondoe/ecoearth",
         image: "/projects/ecoearth.webp",
@@ -103,6 +107,7 @@ export const PROJECTS = [
         description:
             "CJ Cloud Wave 부트캠프에서 진행한 프로젝트, 실시간 데이터 수집 파이프라인과 운영에 최적화된 안정적인 인프라 구축을 중심으로 올리브영의 중동 시장 진출 확대를 위한 인프라 구축 프로젝트",
         date: "2024.02.07 ~ 2024.02.29 (3 weeks)",
+        job: "Solutions Architect",
         link: "https://ecoearth-shop.dev",
         github: "https://github.com/jhondoe/ecoearth",
         image: "/projects/oliveyoung.jpg",

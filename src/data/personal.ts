@@ -6,7 +6,7 @@ export const PERSONAL_INFO = {
     journey: "컨테이너 기술과 클라우드에 관심이 많으며, 현재는 쿠버네티스 기반 플랫폼을 구축하는 엔지니어로 일하고 있습니다.",
     skills: ["🚀 Fast Learner", "💡 Problem Solver", "🤝 Team Player"],
     heroDescription: "안녕하세요, 최보윤입니다!👋",
-    resumeUrl: "/",
+    blogUrl: "https://malangnuo.com/",
     socialLinks: [
         {
             href: "www.linkedin.com/in/by-choi",

@@ -1,3 +1,7 @@
+---
+import { PERSONAL_INFO } from "../../data/personal";
+---
+
 <div class="relative">
   <!-- Input control (peer) -->
   <input id="menu-toggle" type="checkbox" class="peer hidden" />
@@ -42,11 +46,11 @@
         </li>
         <li>
           <a
-            href="#contact"
+            href={PERSONAL_INFO.blogUrl}
             class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
-         drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
+            drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
           >
-            Contact me
+            Blog
           </a>
         </li>
       </ul>
@@ -115,11 +119,11 @@
       </li>
       <li>
         <a
-          href="#contact"
+          href={PERSONAL_INFO.blogUrl}
           class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
          drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
         >
-          Contact me
+          Blog
         </a>
       </li>
     </ul>

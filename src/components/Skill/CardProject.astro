@@ -1,0 +1,33 @@
+---
+import { Icon } from "astro-icon/components";
+import LinkButton from "./LinkButton.astro";
+import Badge from "../UI/Badge.astro";
+
+interface Props {
+    title: string;
+    description: string;
+    date: string;
+}
+
+const { title, description } = Astro.props;
+---
+
+<article
+    class="flex flex-col space-x-0 space-y-0 group md:flex-row md:space-x-8 md:space-y-0 items-center"
+    data-aos="fade-up"
+>
+
+
+    <!-- Content Container -->
+    <div class="w-full md:w-full">
+        <h3
+            class="text-3xl font-bold text-white mb-2 group-hover:text-primary transition-colors duration-300"
+        >
+            {title}
+        </h3>
+
+        <p class="text-xl text-gray-300 mb-2 leading-relaxed font-light px-6 md:px-6 lg:px-8">
+            {description}
+        </p>
+    </div>
+</article>

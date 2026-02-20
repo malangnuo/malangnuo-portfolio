@@ -1,0 +1,11 @@
+---
+import CardProject from "./CardProject.astro";
+import Section from "../UI/Section.astro";
+import { SKILLS } from "../../data/skills";
+---
+
+<Section id="skills" title="Skills & Language" titleClassName="mb-24">
+    <div class="flex flex-col gap-y-14">
+        {SKILLS.map((skill) => <CardProject {...skill} />)}
+    </div>
+</Section>

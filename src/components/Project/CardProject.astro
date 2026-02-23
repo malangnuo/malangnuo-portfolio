@@ -7,7 +7,6 @@ interface Props {
     company: string;
     title: string;
     description: string;
-    image: string;
     date: string;
     job: string;
     tags: Array<{
@@ -16,7 +15,6 @@ interface Props {
         icon: string;
     }>;
     link?: string;
-    github?: string;
 }
 
 const { company, title, description, date, job, tags, link, github } = Astro.props;

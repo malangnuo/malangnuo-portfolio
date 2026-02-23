@@ -66,8 +66,6 @@ export const PROJECTS = [
         date: "2025.10.20 ~ 2026.03.20",
         job: "Platform Engineer",
         link: "https://cryptoviz-demo.vercel.app/",
-        github: "https://github.com/jhondoe/cryptoviz",
-        image: "/projects/cryptoviz.webp",
         tags: [TAGS.AWS, TAGS.PYTHON, TAGS.GRAFANA, TAGS.UPTIME_KUMA],
     },
     {
@@ -78,8 +76,6 @@ export const PROJECTS = [
         date: "2024.09.01 ~ 2026.03.20",
         job: "Platform Engineer",
         link: "https://ecoearth-shop.dev",
-        github: "https://github.com/jhondoe/ecoearth",
-        image: "/projects/ecoearth.webp",
         tags: [TAGS.KUBERNETES, TAGS.ISTIO, TAGS.GITOPS, TAGS.OBSERVABILITY],
     },
     {
@@ -90,8 +86,6 @@ export const PROJECTS = [
         date: "2025.06.16 ~ 2025.10.19",
         job: "Solutions Architect",
         link: "https://ecoearth-shop.dev",
-        github: "https://github.com/jhondoe/ecoearth",
-        image: "/projects/ecoearth.webp",
         tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.NETWORK, TAGS.PYTHON],
     },
     {
@@ -102,8 +96,6 @@ export const PROJECTS = [
         date: "2024.11.12 ~ 2025.03.12",
         job: "Solutions Architect",
         link: "https://ecoearth-shop.dev",
-        github: "https://github.com/jhondoe/ecoearth",
-        image: "/projects/ecoearth.webp",
         tags: [TAGS.AWS, TAGS.TERRAFORM, TAGS.NETWORK],
     },
     {
@@ -113,9 +105,7 @@ export const PROJECTS = [
             "CJ Cloud Wave 부트캠프에서 진행한 프로젝트, 실시간 데이터 수집 파이프라인과 운영에 최적화된 안정적인 인프라 구축을 중심으로 올리브영의 중동 시장 진출 확대를 위한 인프라 구축 프로젝트",
         date: "2024.02.07 ~ 2024.02.29",
         job: "Solutions Architect",
-        link: "https://ecoearth-shop.dev",
-        github: "https://github.com/jhondoe/ecoearth",
-        image: "/projects/oliveyoung.jpg",
+        link: "https://malangnuo.com/posts/CJ%20Cloud%20Wave%20%ED%94%84%EB%A1%9C%EC%A0%9D%ED%8A%B8/",
         tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.GITOPS, TAGS.KUBECOST],
     },
 ];

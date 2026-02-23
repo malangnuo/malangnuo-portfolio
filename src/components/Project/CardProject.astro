@@ -23,12 +23,12 @@ const { company, title, description, date, job, tags, link, github } = Astro.pro
 ---
 
 <article
-    class="w-full flex flex-col space-y-8 group md:flex-row md:space-x-16 md:space-y-0 items-start mx-auto max-w-5xl px-6 md:px-12 lg:px-20"
+    class="w-full flex flex-col space-y-8 group md:flex-row md:space-x-16 md:space-y-0 items-start mx-auto max-w-5xl px-6 md:px-8 lg:px-12"
     data-aos="fade-up"
 >
 
     <!-- Content Container -->
-    <div class="w-full md:w-3/5">
+    <div class="w-full md:w-4/5">
         <p class="text-base text-primary font-medium mb-2 uppercase tracking-widest">
             {company}
         </p>
@@ -66,18 +66,10 @@ const { company, title, description, date, job, tags, link, github } = Astro.pro
 
         <footer class="flex items-center justify-start gap-x-4">
             {
-                github && (
-                    <LinkButton href={github}>
-                        <Icon name="lucide:github" class="size-5" />
-                        Source Code
-                    </LinkButton>
-                )
-            }
-            {
                 link && (
                     <LinkButton href={link}>
                         <Icon name="lucide:external-link" class="size-4" />
-                        Live Demo
+                        Post
                     </LinkButton>
                 )
             }

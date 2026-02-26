@@ -75,7 +75,7 @@ export const PROJECTS = [
             "Kubernetes 기반 플랫폼을 운영하며, 모니터링·CI/CD·보안 자동화를 통해 장애 대응 속도와 운영 안정성을 지속적으로 개선",
         date: "2024.09.01 ~ 2026.03.20",
         job: "Platform Engineer",
-        link: "https://malangnuo.com/posts/saas-platform-management-task1/",
+        link: "https://malangnuo.com/posts/saas-platform-management/",
         tags: [TAGS.KUBERNETES, TAGS.ISTIO, TAGS.GITOPS, TAGS.OBSERVABILITY],
     },
     {

@@ -9,7 +9,7 @@ export const PERSONAL_INFO = {
     blogUrl: "https://malangnuo.com/",
     socialLinks: [
         {
-            href: "www.linkedin.com/in/by-choi",
+            href: "https://www.linkedin.com/in/by-choi",
             label: "LinkedIn",
         },
         { href: "choiboyuna@gmail.com", label: "Email" },        

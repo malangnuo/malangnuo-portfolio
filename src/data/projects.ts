@@ -109,4 +109,9 @@ export const PROJECTS = [
         tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.GITOPS, TAGS.KUBECOST],
     },
 ];
- 
+
+
+export const companyPeriods: Record<string, string> = {
+    "Claion": "2024.05.07 - 2026.03.23",
+    "CJ Cloud Wave": "2024.02.07 - 2024.02.29"
+};

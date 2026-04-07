@@ -1,11 +1,45 @@
 ---
 import CardProject from "./CardProject.astro";
 import Section from "../UI/Section.astro";
-import { PROJECTS } from "../../data/projects";
+import { PROJECTS, companyPeriods } from "../../data/projects";
+
+const groupedProjects = PROJECTS.reduce((acc, project) => {
+    const { company } = project;
+    if (!acc[company]) acc[company] = [];
+    acc[company].push(project);
+    return acc;
+}, {} as Record<string, any>);
+
+const companies = Object.keys(groupedProjects);
 ---
 
 <Section id="projects" title="Work Experiences" titleClassName="mb-24">
-    <div class="flex flex-col gap-y-16">
-        {PROJECTS.map((project) => <CardProject {...project} />)}
-    </div>
+  <div class="flex flex-col gap-y-20">
+    {companies.map((company) => (
+      <div class="flex flex-col gap-y-8">
+        <div class="flex items-baseline gap-x-4 mb-4">
+          {/* 회사 이름 */}
+          <h3 class="text-3xl font-black text-primary uppercase text-shadow italic">
+            {company}
+          </h3>
+          
+          {/* 회사별 기간: 위에서 정의한 period가 있으면 출력 */}
+          {companyPeriods[company] && (
+            <span class="text-lg font-bold text-secondary opacity-70 italic tracking-wide">
+               &nbsp;&nbsp; {companyPeriods[company]}
+            </span>
+          )}
+          
+          <div class="h-[2px] flex-grow bg-primary/20 mt-1"></div>
+        </div>
+
+        <div class="flex flex-col gap-y-12 ml-2 md:ml-4 border-l-2 border-primary/20 pl-6">
+          {groupedProjects[company].map((project) => {
+            const { company: _, ...projectData } = project;
+            return <CardProject {...projectData} />;
+          })}
+        </div>
+      </div>
+    ))}
+  </div>
 </Section>

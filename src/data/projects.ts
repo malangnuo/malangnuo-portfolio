@@ -62,10 +62,10 @@ export const PROJECTS = [
         company: "Gurufin",
         title: "블록체인 & 스테이블 코인 서비스에 대한 인프라 구축 및 운영",
         description:
-            "멀티 클라우드 및 하이브리드 환경에서 운영하며, AWS와 Kubernetes 기반 인프라를 구축·운영하여 안정적이고 확장 가능한 서비스를 제공",
+            "하이브리드 환경에서 운영하며, EKS 기반 인프라를 구축·운영 - GitOps 고도화, Alloy 기반 Observablity 통합, 그리고 FinOps 비용 절감까지",
         date: "2025.05.06 ~ 현재",
         job: "DevOps Engineer",
-        link: "",
+        link: "https://malangnuo.com/posts/join-the-gurufin/",
         tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.OBSERVABILITY],
     },
     {   
@@ -122,6 +122,7 @@ export const PROJECTS = [
 
 
 export const companyPeriods: Record<string, string> = {
+    "Gurufin": "2026.05.06 - 현재",
     "Claion": "2024.05.07 - 2026.03.23",
     "CJ Cloud Wave": "2024.02.07 - 2024.02.29"
 };

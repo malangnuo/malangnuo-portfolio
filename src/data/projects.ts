@@ -124,5 +124,5 @@ export const PROJECTS = [
 export const companyPeriods: Record<string, string> = {
     "Gurufin": "2026.05.06 - 현재",
     "Claion": "2024.05.07 - 2026.03.23",
-    "CJ Cloud Wave": "2024.02.07 - 2024.02.29"
+    "CJ Cloud Wave": "2023.12.18 - 2024.02.29"
 };

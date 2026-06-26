@@ -66,7 +66,7 @@ export const PROJECTS = [
         date: "2025.05.06 ~ 현재",
         job: "DevOps Engineer",
         link: "https://malangnuo.com/posts/join-the-gurufin/",
-        tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.OBSERVABILITY],
+        tags: [TAGS.AWS, TAGS.KUBERNETES, TAGS.GITOPS, TAGS.OBSERVABILITY],
     },
     {   
         company: "Claion",

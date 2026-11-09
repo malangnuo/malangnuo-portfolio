@@ -12,6 +12,6 @@ export const PERSONAL_INFO = {
             href: "https://www.linkedin.com/in/by-choi",
             label: "LinkedIn",
         },
-        { href: "124bree@gmail.com", label: "Email" },        
+        { href: "bybchoi@gmail.com", label: "Email" },        
     ],
 };

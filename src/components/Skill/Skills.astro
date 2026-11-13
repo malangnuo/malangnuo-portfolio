@@ -1,11 +1,10 @@
 ---
-import CardProject from "./CardProject.astro";
-import Section from "../UI/Section.astro";
-import { SKILLS } from "../../data/skills";
+import Section from '../UI/Section.astro';
+import { SKILLS } from '../../data/skills';
+const groups = [
+ { title: 'Cloud & Infrastructure', tags: ['AWS', 'NHN Cloud', 'Proxmox', 'Terraform'] },
+ { title: 'Platform & Delivery', tags: ['Kubernetes', 'EKS', 'Docker', 'Argo CD', 'Jenkins', 'GitLab'] },
+ { title: 'Observability & Automation', tags: ['Grafana', 'Alloy', 'Loki', 'Tempo', 'Prometheus', 'Python'] }
+];
 ---
-
-<Section id="skills" title="Skills & Language" titleClassName="mb-24">
-    <div class="flex flex-col gap-y-14">
-        {SKILLS.map((skill) => <CardProject {...skill} />)}
-    </div>
-</Section>
+<Section id="skills" title="Skills & Language">{groups.map(group => <div class="skill-group"><h3>{group.title}</h3><div class="skill-tags">{group.tags.map(tag => <span>{tag}</span>)}</div></div>)}<div class="skill-group"><h3>Language</h3><p>{SKILLS.find(skill => skill.title === 'English')?.description}</p></div></Section>

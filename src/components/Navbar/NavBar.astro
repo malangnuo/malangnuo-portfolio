@@ -4,7 +4,7 @@ import { PERSONAL_INFO } from "../../data/personal";
 
 <div class="relative">
   <!-- Input control (peer) -->
-  <input id="menu-toggle" type="checkbox" class="peer hidden" />
+  <input id="menu-toggle" type="checkbox" class="peer sr-only" aria-label="메뉴 열기" />
 
   <!-- Navbar -->
   <nav
@@ -12,7 +12,7 @@ import { PERSONAL_INFO } from "../../data/personal";
   >
     <div class="max-w-7xl mx-auto px-6 py-3 flex items-center justify-between">
       <a href="/" class="flex items-center">
-        <h3 class="text-white text-2xl font-bold text-shadow-purple">MALANG NUO</h3>
+        <h3 class="text-white text-2xl font-bold brand-shadow">MALANG NUO</h3>
       </a>
 
       <!-- Links md+ -->
@@ -56,8 +56,8 @@ import { PERSONAL_INFO } from "../../data/personal";
         <li>
           <a
             href={PERSONAL_INFO.blogUrl}
-            class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
-            drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
+            class="px-6 py-3 bg-primary hover:bg-secondary text-[#101a15] font-semibold rounded-3xl transition-all duration-150
+            drop-shadow-[2px_2px_0_#398c5d] active:translate-0.5 active:drop-shadow-none"
           >
             Blog
           </a>
@@ -135,8 +135,8 @@ import { PERSONAL_INFO } from "../../data/personal";
       <li>
         <a
           href={PERSONAL_INFO.blogUrl}
-          class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
-         drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
+          class="px-6 py-3 bg-primary hover:bg-secondary text-[#101a15] font-semibold rounded-3xl transition-all duration-150
+         drop-shadow-[2px_2px_0_#398c5d] active:translate-0.5 active:drop-shadow-none"
         >
           Blog
         </a>
@@ -146,7 +146,7 @@ import { PERSONAL_INFO } from "../../data/personal";
 </div>
 
 <style>
-    .text-shadow-purple {
-        text-shadow: 2px 2px 0 #870deb;
+    .brand-shadow {
+        text-shadow: 2px 2px 0 #398c5d;
     }
 </style>

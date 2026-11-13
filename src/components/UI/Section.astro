@@ -1,29 +1,9 @@
 ---
-import Title from "./Title.astro";
-
-interface Props {
-    id: string;
-    title?: string;
-    className?: string;
-    titleClassName?: string;
-}
-
-const { id, title, className, titleClassName } = Astro.props;
+interface Props { id: string; title?: string; className?: string; titleClassName?: string; }
+const { id, title, className } = Astro.props;
+const labels: Record<string, string> = { about: '01 / ABOUT', projects: '02 / EXPERIENCE', education: '03 / EDUCATION', skills: '04 / SKILLS', contact: '05 / CONTACT' };
 ---
-
-<section
-    id={id}
-    class:list={[
-        "py-24 px-6 max-w-7xl mx-auto flex flex-col items-center justify-center min-h-screen",
-        className,
-    ]}
->
-    {
-        title && (
-            <Title level={2} class={titleClassName}>
-                {title}
-            </Title>
-        )
-    }
-    <slot />
+<section id={id} class:list={['portfolio-section', className]}>
+  <div class="section-label">{labels[id]}</div>
+  <div class="section-body">{title && <h2 class="section-title">{title}</h2>}<slot /></div>
 </section>

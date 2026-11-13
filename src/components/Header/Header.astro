@@ -1,35 +1,11 @@
 ---
-import Links from "../Links/Links.astro";
-import Title from "../UI/Title.astro";
-import { PERSONAL_INFO } from "../../data/personal";
+import { PERSONAL_INFO } from '../../data/personal';
 ---
-
-<header
-  id="home"
-  class="relative h-screen flex flex-col items-center justify-center text-center px-4"
->
-  <main class="relative z-10 flex flex-col items-center">
-    <Title level={1} animate={true}>
-      {PERSONAL_INFO.ename}
-    </Title>
-    <p
-      class="text-lg md:text-2xl text-white mb-8 max-w-2xl font-medium"
-      data-aos="fade-up"
-      data-aos-delay="200"
-    >
-      {PERSONAL_INFO.heroDescription}
-    </p>
-    <div data-aos="fade-up" data-aos-delay="400">
-      <Links />
-    </div>
-    <a
-      href="#contact"
-      class="px-6 py-3 bg-primary hover:bg-secondary text-white font-semibold rounded-3xl transition-all duration-150
-      drop-shadow-[2px_2px_0_#0debd8] active:translate-0.5 active:drop-shadow-none"
-      data-aos="fade-up"
-      data-aos-delay="600"
-    >
-      Contact me
-    </a>
-  </main>
+<header id="home" class="portfolio-hero">
+  <p class="hero-role">DEVOPS / PLATFORM ENGINEER</p>
+  <h1 class="hero-name text-shadow">{PERSONAL_INFO.ename}</h1>
+  <p class="hero-greeting">{PERSONAL_INFO.heroDescription}</p>
+  <p class="hero-summary">클라우드와 컨테이너로 안정적인 서비스를 만들고,<br />운영에서 배운 것을 다음 개선으로 연결합니다.</p>
+  <div class="hero-actions"><a class="mint-button" href="mailto:bybchoi@gmail.com">Email ↗</a><a href="https://www.linkedin.com/in/by-choi" target="_blank" rel="noopener noreferrer">LinkedIn ↗</a></div>
+  <a class="hero-scroll" href="#about">ABOUT ME <span aria-hidden="true">↓</span></a>
 </header>

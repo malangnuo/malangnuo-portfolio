@@ -1,36 +1,11 @@
 @import "tailwindcss";
+:root{color-scheme:dark;--mint:#6ee7a0;--mint-dark:#398c5d;--line:#24312e;--muted:#a7afbf}
+.primary,.text-primary{color:var(--mint)}.secondary{color:#a5f3c4}.bg-primary{background-color:var(--mint)}.bg-secondary{background-color:#398c5d}.hover-text-secondary:hover,.hover\:text-secondary:hover{color:#a5f3c4}.hover-bg-secondary:hover{background-color:#a5f3c4}.hover\:bg-secondary:hover{background-color:#a5f3c4}
+.text-shadow{text-shadow:2px 2px 0 #398c5d}html{scroll-padding-top:90px}a:focus-visible{outline:2px solid var(--mint);outline-offset:5px}a{transition:color .18s,background-color .18s}a:hover{color:var(--mint)}
+.portfolio-hero{position:relative;max-width:1120px;margin:auto;padding:142px 24px 32px;text-align:center;display:flex;align-items:center;flex-direction:column}.hero-role{color:var(--mint);font:11px/1.8 ui-monospace,monospace;letter-spacing:2.8px;margin-bottom:18px}.hero-name{font-size:clamp(42px,7.6vw,86px);font-weight:750;line-height:1.2;letter-spacing:-2.5px;margin:0 0 20px}.hero-greeting{font-size:20px;font-weight:500}.hero-summary{font-size:14px;line-height:1.9;color:var(--muted);margin-top:14px}.hero-actions,.contact-actions{display:flex;flex-wrap:wrap;gap:26px;align-items:center;margin-top:27px;font-size:13px;color:#c1c9d2}.mint-button{display:inline-flex;align-items:center;background:var(--mint);color:#101a15!important;border-radius:8px;padding:11px 22px;font-weight:650;font-size:13px}.mint-button:hover{background:#a5f3c4}.hero-scroll{display:flex;flex-direction:column;gap:7px;color:#8f9aa8;font:10px monospace;letter-spacing:2px;margin-top:43px}.hero-scroll span{font:19px Arial;color:var(--mint)}.stats-banner{width:min(1056px,calc(100% - 64px));margin:0 auto;display:flex;justify-content:center;align-items:center;flex-wrap:wrap;gap:45px;padding:22px 15px;border-block:1px solid var(--line);font:11px monospace;color:#a3acb9;letter-spacing:.5px}.stats-banner strong{font-size:25px;font-weight:500;color:var(--mint);margin-right:7px}.portfolio-section{width:min(1056px,calc(100% - 64px));margin:auto;display:grid;grid-template-columns:180px minmax(0,1fr);gap:30px;padding:43px 12px;border-bottom:1px solid var(--line)}.section-label{font:11px/1.8 monospace;letter-spacing:1.5px;color:var(--mint);padding-top:8px}.section-body{min-width:0}.section-title{font-size:27px;font-weight:650;letter-spacing:-.6px;line-height:1.4;margin:0 0 25px}.about-grid{display:grid;grid-template-columns:minmax(0,1fr) 185px;gap:30px;align-items:center}.about-copy h3{font-size:18px;color:var(--mint);margin-bottom:14px}.about-copy p{font-size:14px;line-height:1.95;color:var(--muted);margin-top:12px;word-break:keep-all}.profile-photo{width:185px;height:auto;border-radius:12px;box-shadow:8px 8px 0 #398c5d;display:block}.value-tags{display:flex;gap:8px;flex-wrap:wrap;margin-top:20px}.value-tags span{font-size:11px;color:#b3d9c1;padding:5px 8px;border-radius:5px;background:#11211b;border:1px solid #284334}.company-group+.company-group{margin-top:36px}.company-heading{display:flex;justify-content:space-between;align-items:center;gap:16px;margin-bottom:17px}.company-heading h3{color:var(--mint);font-size:16px;font-weight:650;letter-spacing:1px;text-transform:uppercase}.company-heading>span{font:11px/1.8 monospace;color:#a0abb9}.project-list{display:grid;gap:17px}.project-card{background:#0e151c;border:1px solid #263b34;border-radius:11px;padding:25px}.project-meta{display:flex;justify-content:space-between;flex-wrap:wrap;gap:9px 15px;color:#a3b7ac;font-size:12px}.project-meta span:last-child{color:#8e9baa;font:11px/1.8 monospace}.project-card h4{font-size:21px;line-height:1.55;font-weight:600;letter-spacing:-.5px;margin:15px 0 11px;word-break:keep-all}.project-card>p{font-size:14px;color:var(--muted);line-height:1.95}.project-bottom{display:flex;justify-content:space-between;align-items:center;flex-wrap:wrap;gap:15px;border-top:1px solid var(--line);padding-top:17px;margin-top:21px}.project-tags{display:flex;gap:8px 13px;flex-wrap:wrap;color:#91aba0;font:11px monospace}.project-bottom>a,.related-posts a{font-size:12px;color:var(--mint)}.related-posts{display:flex;gap:18px;flex-wrap:wrap;margin-top:15px}.education-row{display:flex;justify-content:space-between;gap:20px;padding:20px 0;border-bottom:1px solid var(--line)}.education-row:last-child{border:0}.education-row h3{font-size:16px;font-weight:550;margin-bottom:7px}.education-row p{font-size:13px;color:#9ba8b5}.education-row>span{font:11px/1.8 monospace;color:#8e9baa;white-space:nowrap}.skill-group{margin:23px 0 27px}.skill-group h3{font-size:13px;color:#aebbc4;margin-bottom:13px}.skill-tags{display:flex;gap:9px;flex-wrap:wrap}.skill-tags span{font:12px monospace;color:#b3d9c1;padding:8px 11px;background:#11211b;border:1px solid #284334;border-radius:5px}.skill-group p{font-size:14px;color:#d1d9df}.contact-email{font-size:17px;color:#b7c2cd}#contact{border-bottom:0;padding-bottom:48px}
+@media(max-width:800px){.portfolio-section{grid-template-columns:130px minmax(0,1fr);gap:22px}.about-grid{grid-template-columns:1fr}.profile-photo{grid-row:1;width:min(260px,100%);margin-bottom:10px}}
+@media(max-width:600px){.portfolio-hero{padding:135px 20px 27px}.hero-role{font-size:10px;letter-spacing:1.7px}.hero-name{font-size:44px;letter-spacing:-1.7px}.hero-greeting{font-size:18px}.hero-summary{font-size:13px}.stats-banner{width:calc(100% - 40px);gap:20px;font-size:10px;padding:18px 0}.stats-banner strong{font-size:22px}.portfolio-section{width:calc(100% - 40px);grid-template-columns:1fr;gap:17px;padding:30px 0}.section-title{font-size:24px;margin-bottom:20px}.company-heading{flex-wrap:wrap;gap:6px}.project-card{padding:20px}.project-card h4{font-size:18px}.project-card>p{font-size:13px}.education-row{flex-direction:column;gap:10px}.about-copy p{font-size:13px}.contact-actions{gap:22px}}
+@media(prefers-reduced-motion:reduce){*,*::before,*::after{animation:none!important;transition:none!important}[data-aos]{opacity:1!important;transform:none!important}}
 
-
-.primary {
-  color: #7836cf;
-}
-.secondary {
-  color: #512092;
-}
-.bg-primary {
-  background-color: #7836cf;
-}
-.bg-secondary {
-  background-color: #512092;
-}
-.text-primary {
-  color: #7836cf;
-}
-
-/* reglas hover (usar estas clases directamente) */
-.hover-text-secondary:hover {
-  color: #7836cf;
-}
-.hover-bg-secondary:hover {
-  background-color: #7836cf;
-}
-.hover\:bg-secondary:hover {
-  background-color: #512092;
-}
-.hover\:text-secondary:hover {
-  color: #512092;
-}
-
-.text-shadow {
-  text-shadow: 2px 2px 0 #620deb;
-}
+/* Preserve the original offset shadows on section and company headings. */
+.section-title,.company-heading h3{ text-shadow:2px 2px 0 var(--mint-dark); }
